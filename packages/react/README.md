@@ -29,6 +29,14 @@ export default getFlatConfigs(...reactConfigs);
 
 ### 2️⃣ Next Js
 
+```sh
+npm install --save-dev @next/eslint-plugin-next
+# or
+yarn add -D @next/eslint-plugin-next
+# or
+pnpm add -D @next/eslint-plugin-next
+```
+
 **eslint.config.js**:
 
 ```js

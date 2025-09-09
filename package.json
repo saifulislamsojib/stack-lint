@@ -1,6 +1,6 @@
 {
   "name": "stack-lint",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "stack-lint",
   "type": "module",
   "scripts": {
@@ -20,9 +20,9 @@
   "devDependencies": {
     "@eslint/js": "^9.33.0",
     "@next/eslint-plugin-next": "^15.5.2",
-    "@stack-lint/base": "^0.0.7",
-    "@stack-lint/node": "^0.0.7",
-    "@stack-lint/react": "^0.0.7",
+    "@stack-lint/base": "^0.0.8",
+    "@stack-lint/node": "^0.0.8",
+    "@stack-lint/react": "^0.0.9",
     "@stack-lint/typescript": "^0.0.7",
     "@typescript-eslint/eslint-plugin": "^8.39.0",
     "@typescript-eslint/parser": "^8.39.0",
@@ -35,6 +35,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-prefer-function-component": "^4.0.1",
+    "eslint-plugin-security": "^3.0.1",
     "globals": "^16.3.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",

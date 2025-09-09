@@ -2,7 +2,7 @@ import restrictedGlobals from './restricted-globals.js';
 
 export default {
   'no-shadow': 'error',
-  'no-use-before-define': 'error',
+  'no-use-before-define': ['error', { functions: false }],
   'no-await-in-loop': 'error',
   'no-console': ['warn', { allow: ['warn', 'error'] }],
   'no-inner-declarations': ['error', 'both'],
@@ -65,7 +65,6 @@ export default {
   'default-case': ['error', { commentPattern: '^no default$' }],
   'default-case-last': 'error',
   'default-param-last': 'error',
-  'consistent-return': 'error',
   'dot-notation': 'error',
   'class-methods-use-this': 'error',
   'block-scoped-var': 'error',
