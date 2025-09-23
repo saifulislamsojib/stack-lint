@@ -18,9 +18,7 @@ export default Object.freeze([
     settings: {
       react: { version: 'detect' },
     },
-    plugins: {
-      'jsx-a11y': jsxA11y,
-    },
+    plugins: { 'jsx-a11y': jsxA11y },
     rules: {
       ...webConfigs.rules,
       ...react.configs['jsx-runtime'].rules,
@@ -34,7 +32,6 @@ export default Object.freeze([
       'react/jsx-boolean-value': ERROR,
       'react/jsx-no-useless-fragment': ERROR,
       'react/jsx-props-no-spread-multi': ERROR,
-      'react/jsx-no-constructed-context-values': ERROR,
       'react/no-invalid-html-attribute': ERROR,
       'react/no-this-in-sfc': ERROR,
       'react/no-namespace': ERROR,
@@ -44,7 +41,6 @@ export default Object.freeze([
       'react/style-prop-object': ERROR,
       'react/void-dom-elements-no-children': ERROR,
       'react/prefer-stateless-function': ERROR,
-      'react/jsx-no-literals': ['off', { noStrings: true }],
       'react/jsx-filename-extension': [ERROR, { extensions: ['.jsx', '.tsx'] }],
       'react/hook-use-state': [ERROR, { allowDestructuredState: true }],
       'react/self-closing-comp': [ERROR, { component: true, html: true }],

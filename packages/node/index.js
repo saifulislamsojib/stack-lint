@@ -6,7 +6,10 @@ import esmRestGlobals from './rules/esm-rest-globals.js';
 export default function getNodeConfig(isNodeEsm = false) {
   const globalsObj = { ...globals.es2023, ...globals.node };
 
-  const rules = { ...security.configs.recommended.rules };
+  const rules = {
+    ...security.configs.recommended.rules,
+    'security/detect-object-injection': 'off',
+  };
   if (isNodeEsm) {
     globalsObj.__dirname = 'off';
     globalsObj.__filename = 'off';
