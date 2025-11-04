@@ -1,6 +1,6 @@
 {
   "name": "@stack-lint/react",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "stack lint eslint configs for react",
   "type": "module",
   "main": "index.js",
@@ -30,20 +30,19 @@
   },
   "author": "https://github.com/saifulislamsojib",
   "license": "MIT",
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.19.0",
   "dependencies": {
-    "globals": "^16.4.0",
+    "globals": "^16.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-prefer-function-component": "^4.0.1"
+    "eslint-plugin-react-hooks": "^7.0.1"
   },
   "peerDependencies": {
-    "@stack-lint/base": ">=0.0.10",
+    "@stack-lint/base": ">=0.0.11",
     "eslint": ">=9",
     "prettier": ">=3",
     "react": ">=19",
-    "@next/eslint-plugin-next": ">=15.1"
+    "@next/eslint-plugin-next": ">=16"
   },
   "peerDependenciesMeta": {
     "@next/eslint-plugin-next": {

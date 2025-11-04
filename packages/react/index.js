@@ -3,7 +3,6 @@ import { webConfigs } from '@stack-lint/base/web';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
-import preferFunctionComponent from 'eslint-plugin-react-prefer-function-component/config';
 
 const ERROR = 'error';
 
@@ -12,7 +11,6 @@ unassignedImportFiles.push('server-only');
 export default Object.freeze([
   react.configs.flat.recommended,
   reactHooks.configs['recommended-latest'],
-  preferFunctionComponent.configs.recommended,
   {
     ...webConfigs,
     settings: {
