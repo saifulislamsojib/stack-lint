@@ -10,7 +10,7 @@ unassignedImportFiles.push('server-only');
 
 export default Object.freeze([
   react.configs.flat.recommended,
-  reactHooks.configs['recommended-latest'],
+  reactHooks.configs.flat['recommended-latest'],
   {
     ...webConfigs,
     settings: {
