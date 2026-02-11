@@ -1,6 +1,6 @@
 {
   "name": "@stack-lint/react",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "stack lint eslint configs for react",
   "type": "module",
   "main": "index.js",
@@ -32,13 +32,13 @@
   "license": "MIT",
   "packageManager": "pnpm@10.19.0",
   "dependencies": {
-    "globals": "^16.5.0",
+    "globals": "^17.3.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1"
   },
   "peerDependencies": {
-    "@stack-lint/base": ">=0.0.11",
+    "@stack-lint/base": ">=0.0.13",
     "eslint": ">=9",
     "prettier": ">=3",
     "react": ">=19",
@@ -50,6 +50,6 @@
     }
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   }
 }
