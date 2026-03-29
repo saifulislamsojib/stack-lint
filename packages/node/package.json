@@ -1,6 +1,6 @@
 {
   "name": "@stack-lint/node",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "description": "stack lint eslint configs for nodejs",
   "type": "module",
   "main": "index.js",
@@ -25,15 +25,15 @@
   },
   "author": "https://github.com/saifulislamsojib",
   "license": "MIT",
-  "packageManager": "pnpm@10.19.0",
+  "packageManager": "pnpm@10.33.0",
   "dependencies": {
-    "globals": "^17.3.0",
-    "eslint-plugin-security": "^3.0.1"
+    "globals": "^17.4.0",
+    "eslint-plugin-security": "^4.0.0"
   },
   "peerDependencies": {
-    "@stack-lint/base": ">=0.0.13",
-    "eslint": ">=9",
-    "prettier": ">=3"
+    "@stack-lint/base": ">=0.1.0",
+    "eslint": ">=10",
+    "prettier": ">=3.8"
   },
   "engines": {
     "node": ">=22"
