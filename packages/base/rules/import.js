@@ -1,7 +1,7 @@
 import testFiles from '../constants/testFiles.js';
 
 export const devDepsImportAllowedFiles = [
-  '{vite,vitest,eslint,next,postcss,jest,rollup,rsbuild}.config.{js,ts,mjs,mts,cjs}',
+  '{vite,vitest,eslint,next,postcss,jest,rollup,rsbuild,oxlint,webpack,parcel,storybook,playwright,cypress,babel,swc,tsup,unbuild,esbuild,astro,nuxt,svelte,tailwind,prettier,commitlint,stylelint,lintstaged}.config.{js,ts,mjs,mts,cjs}',
   ...testFiles,
 ];
 
@@ -33,7 +33,7 @@ export default {
   'import-x/first': 'error',
   'import-x/no-mutable-exports': 'error',
   'import-x/no-amd': 'error',
-  'import-x/no-deprecated': 'warn',
+  'import-x/no-deprecated': 'error',
   'import-x/no-unassigned-import': ['error', { allow: unassignedImportFiles }],
   'import-x/extensions': [
     'error',

@@ -66,7 +66,7 @@ export default {
   'default-case-last': 'error',
   'default-param-last': 'error',
   'dot-notation': 'error',
-  'class-methods-use-this': 'error',
+  'class-methods-use-this': ['error', { enforceForClassFields: false }],
   'block-scoped-var': 'error',
   'func-style': [
     'error',

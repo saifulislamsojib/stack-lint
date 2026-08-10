@@ -7,15 +7,12 @@ import imports, {
   unassignedImportFiles,
 } from './rules/import.js';
 
-const allFiles = ['**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,d.ts}'];
-
 export default function getFlatConfigs(...configs) {
   return Object.freeze([
-    { ignores: ['node_modules', 'dist', 'out', 'build'] },
+    { ignores: ['node_modules', 'dist', 'out', 'build', 'coverage'] },
     jsRecommended,
     importConfigs.recommended,
     {
-      files: allFiles,
       settings: {
         'import-x/extensions': ['.js', '.jsx', '.mjs', '.cjs'],
       },
@@ -32,9 +29,4 @@ export default function getFlatConfigs(...configs) {
 
 export { default as testFiles } from './constants/testFiles.js';
 export { default as restrictedGlobals } from './rules/restricted-globals.js';
-export {
-  allFiles,
-  devDepsImportAllowedFiles,
-  importConfigs,
-  unassignedImportFiles,
-};
+export { devDepsImportAllowedFiles, importConfigs, unassignedImportFiles };

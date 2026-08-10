@@ -46,10 +46,12 @@ export default getFlatConfigs(
 **eslint.config.js**:
 
 ```js
-import getWebFlatConfigs from '@stack-lint/base/web';
+import getFlatConfigs from '@stack-lint/base';
+import { webConfigs } from '@stack-lint/base/web';
 import getTsConfigs from '@stack-lint/typescript';
 
-export default getWebFlatConfigs(
+export default getFlatConfigs(
+  webConfigs,
   ...getTsConfigs({
     tsconfigRootDir: import.meta.dirname,
     // tsRootDir: 'src/' your tsconfigs files rootDir, if * then no need the field

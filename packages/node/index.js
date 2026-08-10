@@ -1,4 +1,3 @@
-import { allFiles } from '@stack-lint/base';
 import security from 'eslint-plugin-security';
 import globals from 'globals';
 import esmRestGlobals from './rules/esm-rest-globals.js';
@@ -23,7 +22,6 @@ export default function getNodeConfig(isNodeEsm = false) {
     }
   }
   return Object.freeze({
-    files: allFiles,
     languageOptions: { globals: globalsObj },
     plugins: security.configs.recommended.plugins,
     rules,

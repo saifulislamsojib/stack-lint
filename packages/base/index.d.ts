@@ -7,4 +7,4 @@ export { flatConfigs as importConfigs } from 'eslint-plugin-import-x';
 export { default as testFiles } from './constants/testFiles.js';
 export { devDepsImportAllowedFiles, unassignedImportFiles } from './rules/import.js';
 export { default as restrictedGlobals } from './rules/restricted-globals.js';
-export const allFiles: string[];
+

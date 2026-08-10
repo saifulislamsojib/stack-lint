@@ -88,7 +88,10 @@ export default {
   '@typescript-eslint/parameter-properties': 'error',
   '@typescript-eslint/prefer-enum-initializers': 'error',
   'class-methods-use-this': 'off',
-  '@typescript-eslint/class-methods-use-this': 'error',
+  '@typescript-eslint/class-methods-use-this': [
+    'error',
+    { enforceForClassFields: false },
+  ],
 };
 
 export const dtsOnlyRules = {

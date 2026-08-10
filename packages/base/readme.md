@@ -39,9 +39,10 @@ export default getFlatConfigs();
 **eslint.config.js**:
 
 ```js
-import getWebFlatConfigs from '@stack-lint/base/web';
+import getFlatConfigs from '@stack-lint/base';
+import { webConfigs } from '@stack-lint/base/web';
 
-export default getWebFlatConfigs();
+export default getFlatConfigs(webConfigs);
 ```
 
 ---

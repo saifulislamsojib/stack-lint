@@ -12,7 +12,7 @@ export default Object.freeze([
   react.configs.flat.recommended,
   reactHooks.configs.flat['recommended-latest'],
   {
-    ...webConfigs,
+    languageOptions: webConfigs.languageOptions,
     settings: {
       react: { version: 'detect' },
     },
