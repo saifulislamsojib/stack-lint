@@ -5,6 +5,7 @@ import tsRules, { dtsOnlyRules } from './rules/index.js';
 export default function getTsConfigs({
   tsconfigRootDir,
   tsRootDir = '',
+  projectService = true,
   rules = {},
   typeDefinition = 'type',
 } = {}) {
@@ -19,7 +20,7 @@ export default function getTsConfigs({
       settings: importConfigs.typescript.settings,
       languageOptions: {
         parserOptions: {
-          projectService: true,
+          projectService,
           tsconfigRootDir,
         },
       },

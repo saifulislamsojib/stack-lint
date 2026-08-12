@@ -2,16 +2,8 @@ import { restrictedGlobals } from '@stack-lint/base';
 
 export default restrictedGlobals.concat([
   {
-    name: 'require',
-    message: '`require` is not available in ESM. Use `import` instead.',
-  },
-  {
     name: 'module',
     message: '`module` is not available in ESM. Use `export` instead.',
-  },
-  {
-    name: 'exports',
-    message: '`exports` is not available in ESM. Use `export` instead.',
   },
   {
     name: '__dirname',

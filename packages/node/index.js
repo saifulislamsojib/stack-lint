@@ -8,6 +8,7 @@ export default function getNodeConfig(isNodeEsm = false) {
   const rules = {
     ...security.configs.recommended.rules,
     'security/detect-object-injection': 'off',
+    'security/detect-non-literal-fs-filename': 'off',
   };
   if (isNodeEsm) {
     globalsObj.__dirname = 'off';

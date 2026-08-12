@@ -1,6 +1,6 @@
 {
   "name": "@stack-lint/typescript",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "stack lint eslint configs for typescript",
   "type": "module",
   "main": "index.js",
